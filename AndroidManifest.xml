@@ -49,6 +49,25 @@
             android:name="com.vehicleapp.LocatorMainActivity"
             android:label="@string/title_activity_locator_main" >
         </activity>
+        <activity
+            android:name="com.vehicleapp.Vehicle_Data"
+            android:label="@string/title_activity_vehicle__data" >
+        </activity>
+
+        <receiver android:name="com.vehicleapp.MediaButtonIntentReceiver" >
+            <intent-filter android:priority="1000000000000" >
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Vehicle_Data" >
+
+    <TextView
+        android:id="@+id/tv_page_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Vehicle name" />
+
+    <EditText
+        android:id="@+id/txt_vehicle_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_page_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:hint="write vehicle name"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btn_add_vehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_vehicle_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="Save" />
+
+</RelativeLayout>

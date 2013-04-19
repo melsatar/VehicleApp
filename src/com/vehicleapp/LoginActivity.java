@@ -72,6 +72,7 @@ public class LoginActivity extends Activity {
 						LocatorMainActivity.class);
 				startActivityForResult(intent,
 						Request_code);
+				finish();
 				} else {
 				  // show the signup or login screen
 					mEmail = getIntent().getStringExtra(EXTRA_EMAIL);
@@ -186,9 +187,10 @@ public class LoginActivity extends Activity {
 									Intent intent = new Intent();
 									// intent.setClass(this, )
 									intent.setClass(LoginActivity.this,
-											LocatorMainActivity.class);
+											Vehicle_Data.class);
 									startActivityForResult(intent,
 											Request_code);
+									finish();
 
 							} 
 						}
