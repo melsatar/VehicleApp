@@ -49,8 +49,6 @@ public class LocatorMainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_locator_main);
 		// Save the current Installation to Parse.
-
-		PushService.subscribe(this, ParseUser.getCurrentUser().getObjectId(), LocatorMainActivity.class);
 		ParseInstallation installation = ParseInstallation.getCurrentInstallation();
 		installation.put("owner", ParseUser.getCurrentUser().getObjectId());
 		installation.saveEventually();
